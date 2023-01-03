@@ -1,4 +1,7 @@
 <h1>Client List</h1>
 <ul class="list-group">
   <app-client *ngFor="let client of clients" [client]="client"></app-client>
+  <app-coworker *ngFor="let coworker of coworkers" [coworker]="coworker"></app-coworker>
+  <app-sales-rep *ngFor="let salesRep of salesReps" [salesRep]="salesRep"></app-sales-rep>
 </ul>
+<app-add-form></app-add-form>

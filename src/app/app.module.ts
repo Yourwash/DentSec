@@ -9,6 +9,8 @@ import { List } from './list/list.component';
 import { ClientComponent } from './list/client/client.component';
 import { CoworkerComponent } from './list/coworker/coworker.component';
 import { SalesRepComponent } from './list/sales-rep/sales-rep.component';
+import {FormsModule} from "@angular/forms";
+import { AddFormComponent } from './list/add-form/add-form.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { SalesRepComponent } from './list/sales-rep/sales-rep.component';
     List,
     ClientComponent,
     CoworkerComponent,
-    SalesRepComponent
+    SalesRepComponent,
+    AddFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

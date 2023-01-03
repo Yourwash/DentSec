@@ -3,4 +3,7 @@ export interface Client {
   name: string;
   lastName: string;
   number: number;
+  dob: Date;
+  dateOfRegistration: Date;
+  email:string;
 }
