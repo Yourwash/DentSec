@@ -5,14 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LinkComponent } from './link/link.component';
-import { ListComponent } from './list/list.component';
+import { List } from './list/list.component';
+import { ClientComponent } from './list/client/client.component';
+import { CoworkerComponent } from './list/coworker/coworker.component';
+import { SalesRepComponent } from './list/sales-rep/sales-rep.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     LinkComponent,
-    ListComponent
+    List,
+    ClientComponent,
+    CoworkerComponent,
+    SalesRepComponent
   ],
   imports: [
     BrowserModule,

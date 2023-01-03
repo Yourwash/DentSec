@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./link.component.css']
 })
 export class LinkComponent implements OnInit{
+  name ='Clients';
+  content=''
   constructor(private router: Router) { }
   ngOnInit(): void {
   }
