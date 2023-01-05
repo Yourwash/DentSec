@@ -10,11 +10,11 @@ import {SalesRep} from "../Interfaces/sales-rep";
 })
 export class List {
   clients: Client[] = [
-    // {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864},
-    // {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864},
-    // {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864},
-    // {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864},
-    // {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864}
+    {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864},
+    {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864},
+    {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864},
+    {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864},
+    {clientID: 1, name: 'asdfsf', lastName: 'asfda', number: 54864}
   ]
   coworkers: Coworker[]=[]
   salesReps: SalesRep[]=[]

@@ -1,0 +1,44 @@
+<div class="container">
+  <form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+    <--Νame-->
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text">First Name:</span>
+      <input formControlName="name" id="name" type="text" class="form-control" aria-describedby="addon-wrapping">
+    </div>
+    <--Last Name-->
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text">Last Name:</span>
+      <input formControlName="lastName" id="lastName" type="text" class="form-control"
+             aria-describedby="addon-wrapping">
+    </div>
+    <--Phone Number-->
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text">Phone Number:</span>
+      <input formControlName="number" id="number" type="text" class="form-control" aria-describedby="addon-wrapping">
+    </div>
+    <--Email-->
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text">E-mail:</span>
+      <input formControlName="email" id="email" type="text" class="form-control" aria-describedby="addon-wrapping">
+    </div>
+    <--Date of Birth-->
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text">Date of Birth:</span>
+      <input formControlName="dob" id="dob" class="form-control" type="date" aria-describedby="addon-wrapping"/>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    <button (click)="showClient()" type="button" class="btn btn-primary mt-3">Press</button>
+  </form>
+</div>
+<div *ngFor="let client of clients" class="container mt-3">
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      {{client.name}} {{client.lastName}}
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{client.number}}</li>
+      <li class="list-group-item">{{client.email}}</li>
+      <li class="list-group-item">{{client.dob}}</li>
+    </ul>
+  </div>
+</div>

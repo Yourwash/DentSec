@@ -1,15 +1,27 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary text-light bg-info">
   <div class="container-fluid ">
-    <a class="navbar-brand" href="#">Vlahoyiannis Dentistry</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <div class="mx-2">
+      <button class="btn btn-primary me-3" data-bs-toggle="button" type="button" routerLink="/">
+        Vlahoyiannis Dentistry
+      </button>
+      <a class="navbar-brand" href="#"></a>
+      <button class="btn btn-primary me-3" data-bs-toggle="button" type="button" routerLink="/client-list">
+        Clients
+      </button>
+      <button class="btn btn-primary" data-bs-toggle="button" type="button" routerLink="/salesRep-list">
+        Sales Reps
+      </button>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+      </span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <app-link></app-link>
+          <app-link></app-link>
         </li>
-
       </ul>
     </div>
   </div>
